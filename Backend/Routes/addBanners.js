@@ -6,10 +6,12 @@ const router = Router();
 router.post("/" , (req, res) => {
 
     const banner = {
+        ID: req.body.ID,
         Title: req.body.Title,
         Description: req.body.Description,
         Timer: req.body.Timer,
-        Link : req.body.Link
+        Link : req.body.Link,
+        isVisible: req.body.isVisible
     }
 
     console.log(banner);

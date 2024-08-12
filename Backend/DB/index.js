@@ -12,6 +12,14 @@
 //     Link VARCHAR(200)
 // );
 
+// ALTER TABLE banners
+// ADD ID INT;
+
+// ALTER TABLE banners
+// ADD isVisible BOOLEAN;
+
+
+
 const sql = require("mysql2");
 
 const db = sql.createConnection({

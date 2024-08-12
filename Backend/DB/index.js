@@ -1,33 +1,9 @@
-// 1. banner name
-// 2. banner desc
-// 3. timmer
-// 4. visibility
-// 5. links
-
-
-// CREATE TABLE banners (
-//     Title VARCHAR(100),
-//     Description VARCHAR(100),
-//     Timer INT,
-//     Link VARCHAR(200)
-// );
-
-// ALTER TABLE banners
-// ADD ID INT;
-
-// ALTER TABLE banners
-// ADD isVisible BOOLEAN;
-
-
 
 const sql = require("mysql2");
 
-const db = sql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'Parth@1204',
-    database: 'bannersdata'
-});
+const url = `mysql://root:EMsJYbnDkfZjiksDQwTFGKWMQIcyXHrt@mysql.railway.internal:3306/railway`
+
+const db = sql.createConnection(url);
 
 db.connect((err) => {
     if(err) throw err;

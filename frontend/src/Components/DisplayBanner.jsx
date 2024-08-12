@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const DisplayBanner = () => {
   const [banners, setBanners] = useState([]);
@@ -32,10 +33,10 @@ const DisplayBanner = () => {
                   {banner.Description}
                 </p>
                 <a
-                  href="#"
+                  href={banner.Link}
                   className="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
                 >
-                  {banner.Link}
+                  Click Here
                 </a>
               </div>
             </div>

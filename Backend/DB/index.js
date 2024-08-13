@@ -1,9 +1,12 @@
 
 const sql = require("mysql2");
 
-const url = `mysql://root:EMsJYbnDkfZjiksDQwTFGKWMQIcyXHrt@mysql.railway.internal:3306/railway`
-
-const db = sql.createConnection(url);
+const db = sql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'Parth@1204',
+    database: 'bannersdata'
+});
 
 db.connect((err) => {
     if(err) throw err;
